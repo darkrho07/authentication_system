@@ -1,35 +1,32 @@
 Simple Authentication System
 
-A basic Python authentication system using CSV for data storage and SHA-256 for password hashing.
+A simple command-line authentication system built with Python.
 
 Features
 
-- User registration
-- Username availability check
+- User registration and login
+- Username validation
 - Password confirmation
 - SHA-256 password hashing
-- Registration date and time
-- CSV-based user database
-- Basic message storage
-- Command-line interface
+- Registration date and last login tracking
+- CSV-based database
+- User message storage
 
 Requirements
 
 - Python 3
-- No external packages required
+- No external libraries required
 
 Run
 
 python main.py
 
+Database
+
+User data is stored in "database.csv" with the following fields:
+
+id, username, password, lastlogin, registerdate, message
+
 Note
 
-This project is made for learning purposes. It is not recommended for production use.
-
-Future Improvements
-
-- Complete login system
-- Improve password security
-- Use SQLite instead of CSV
-- Improve message handling
-- Add account management
+This project is made for learning purposes and is not intended for production use.
